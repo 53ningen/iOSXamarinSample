@@ -9,6 +9,7 @@ namespace XamarinSample
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
+        UINavigationController navigationController = new UINavigationController();
 
         public override UIWindow Window
         {
@@ -25,8 +26,10 @@ namespace XamarinSample
 #if ENABLE_TEST_CLOUD
             Xamarin.Calabash.Start();
 #endif
+            var mainViewController = new MainViewController();
+            navigationController.AddChildViewController(mainViewController);
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            Window.RootViewController = new ViewController();
+            Window.RootViewController = navigationController;
             Window.MakeKeyAndVisible();
 
             return true;
