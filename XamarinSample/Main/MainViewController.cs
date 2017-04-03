@@ -4,7 +4,7 @@ using UIKit;
 
 namespace XamarinSample
 {
-    public class ViewController : UIViewController
+    public class MainViewController : UIViewController
     {
         public override void ViewDidLoad()
         {
