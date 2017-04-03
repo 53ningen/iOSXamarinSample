@@ -11,6 +11,7 @@ namespace XamarinSample
     public class SamplePageController : UIViewController
     {
 
+        SamplePageDelegate pageDelegate;
         SamplePageDataSource dataSource;
         UIPageViewController pageViewController;
 
@@ -21,6 +22,8 @@ namespace XamarinSample
 
             pageViewController = new UIPageViewController(UIPageViewControllerTransitionStyle.Scroll, UIPageViewControllerNavigationOrientation.Horizontal);
 
+            pageDelegate = new SamplePageDelegate();
+            pageViewController.Delegate = pageDelegate;
             dataSource = new SamplePageDataSource();
             pageViewController.DataSource = dataSource;
             pageViewController.SetViewControllers(new UIViewController[] { dataSource.Pages.ElementAt(0) }, UIPageViewControllerNavigationDirection.Forward, false, null);
@@ -29,6 +32,15 @@ namespace XamarinSample
             View.AddSubview(pageViewController.View);
             pageViewController.View.Frame = View.Bounds;
             pageViewController.DidMoveToParentViewController(this);
+        }
+
+    }
+
+    public class SamplePageDelegate : UIPageViewControllerDelegate
+    {
+        public override void DidFinishAnimating(UIPageViewController pageViewController, bool finished, UIViewController[] previousViewControllers, bool completed)
+        {
+            Console.WriteLine("didFinishAnimating");
         }
 
     }
@@ -66,15 +78,6 @@ namespace XamarinSample
             return index >= Pages.Count() - 1 ? null : Pages.ElementAt(index + 1);
         }
 
-        public override nint GetPresentationCount(UIPageViewController pageViewController)
-        {
-            return Pages.Count();
-        }
-
-        public override nint GetPresentationIndex(UIPageViewController pageViewController)
-        {
-            return 0;
-        }
     }
 
 }
