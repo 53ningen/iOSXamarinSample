@@ -133,7 +133,7 @@
     <Compile Include="Main\MainViewController.cs" />
     <Compile Include="UIPageView\SamplePageController.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="MvvmCrossSample\SampleView.cs" />
+    <Compile Include="MvvmCrossSample\SampleViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinSample.MvvmCross.ViewModels\XamarinSample.MvvmCross.ViewModels.csproj">

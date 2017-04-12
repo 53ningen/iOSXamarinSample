@@ -11,13 +11,18 @@ namespace XamarinSample.MvvmCross.ViewModels
         public string TextA
         {
             get { return textA; }
-            set { textA = value; RaisePropertyChanged(() => textA); }
+            set { textA = value; RaisePropertyChanged(() => TextAB); }
         }
 
         public string TextB
         {
             get { return textB; }
-            set { textB = value; RaisePropertyChanged(() => textB); }
+            set { textB = value; RaisePropertyChanged(() => TextAB); }
+        }
+
+        public string TextAB
+        {
+            get { return textA + textB; }
         }
     }
 }

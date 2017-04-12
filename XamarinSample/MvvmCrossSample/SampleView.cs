@@ -6,7 +6,7 @@ using MvvmCross.Binding.BindingContext;
 using UIKit;
 namespace XamarinSample
 {
-    public class SampleView : MvxViewController
+    public class SampleViewController : MvxViewController
     {
 
         UIStackView stackView;
@@ -21,7 +21,7 @@ namespace XamarinSample
             View.AddSubview(stackView);
 
             this.Request = new MvxViewModelRequest<SampleViewModel>(null, null, new MvxRequestedBy());
-            var set = this.CreateBindingSet<SampleView, SampleViewModel>();
+            var set = this.CreateBindingSet<SampleViewController, SampleViewModel>();
             set.Apply();
         }
 
