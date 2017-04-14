@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSample.UITests", "Xa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSample.MvvmCross.ViewModels", "XamarinSample.MvvmCross.ViewModels\XamarinSample.MvvmCross.ViewModels.csproj", "{5C1CCD04-9F64-4738-A5A4-F99BA92519DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSample.ReactiveUI.ViewModels", "XamarinSample.ReactiveUI.ViewModels\XamarinSample.ReactiveUI.ViewModels.csproj", "{837D1D7E-9141-45CC-996A-AA38AE820824}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -53,5 +55,17 @@ Global
 		{5C1CCD04-9F64-4738-A5A4-F99BA92519DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C1CCD04-9F64-4738-A5A4-F99BA92519DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C1CCD04-9F64-4738-A5A4-F99BA92519DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|iPhone.Build.0 = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837D1D7E-9141-45CC-996A-AA38AE820824}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

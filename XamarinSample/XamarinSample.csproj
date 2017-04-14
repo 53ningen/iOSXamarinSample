@@ -108,6 +108,24 @@
     <Reference Include="MvvmCross.iOS.Support">
       <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
     </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.4.0\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.7.2.0\lib\Xamarin.iOS10\ReactiveUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -118,6 +136,7 @@
     <Folder Include="Main\" />
     <Folder Include="UIPageView\" />
     <Folder Include="MvvmCrossSample\" />
+    <Folder Include="ReactiveUISample\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -134,11 +153,16 @@
     <Compile Include="UIPageView\SamplePageController.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="MvvmCrossSample\SampleViewController.cs" />
+    <Compile Include="ReactiveUISample\ReactiveUISampleViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinSample.MvvmCross.ViewModels\XamarinSample.MvvmCross.ViewModels.csproj">
       <Project>{5C1CCD04-9F64-4738-A5A4-F99BA92519DE}</Project>
       <Name>XamarinSample.MvvmCross.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamarinSample.ReactiveUI.ViewModels\XamarinSample.ReactiveUI.ViewModels.csproj">
+      <Project>{837D1D7E-9141-45CC-996A-AA38AE820824}</Project>
+      <Name>XamarinSample.ReactiveUI.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
